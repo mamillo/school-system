@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header style={styles.header}>
-      <h1 style={styles.logo}>SchoolMS</h1>
+      <h1 style={styles.logo}>ELIMU SCHOOL</h1>
 
       <nav>
         <ul style={styles.nav}>
@@ -22,7 +22,7 @@ const styles = {
     alignItems: "center",
     backgroundColor: "#1e3a8a",
     color: "white",
-    padding: "15px 30px"
+    padding: "20px 30px"
   },
   logo: {
     margin: 0
@@ -30,7 +30,7 @@ const styles = {
   nav: {
     listStyle: "none",
     display: "flex",
-    gap: "20px",
+    gap: "15px",
     margin: 0
   }
 };

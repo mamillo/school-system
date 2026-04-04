@@ -5,7 +5,7 @@ function App() {
     <div>
       <Header />
       <h2 style={{ padding: "20px" }}>
-        Welcome to School Management System
+        Welcome to Elimu School where we nurture young minds and empower future leaders. Explore our dashboard to manage students, teachers, and attendance with ease. Let's create a brighter future together!
       </h2>
     </div>
   );
