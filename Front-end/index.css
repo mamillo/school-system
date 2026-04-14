@@ -1,132 +1,90 @@
-/* General page styling */
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f7fa;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Reset */
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Central container */
+.central-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
-/* Container for login box */
-.login-container {
-  display: flex;
-  background: #00BA86;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  overflow: hidden;
-  width: 800px;
-  max-width: 90%;
-}
-
-/* Left side: logo and branding */
-.login-left {
-  background: #D9D9D9; /* deep school blue */
-  color: black;
-  opacity: 28;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Box holding logo + slogan + login form */
+.central-box {
+  background: #fff;
   padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.login-left img {
-justify-content: center;
-  align-items: center;
-  max-width: 300px;
+.central-box h1 {
+  margin: 15px 0 5px;
+  color: #2a5298;
+  font-weight: 600;
+}
+
+.central-box p {
   margin-bottom: 20px;
+  font-style: italic;
+  color: #555;
 }
 
-.login-left h1 {
-  align-items: center;
-  font-size: 40px;
-  margin: 10;
+.logo {
+  max-width: 120px;
+  margin-bottom: 10px;
 }
 
-.login-left p {
-  font-size: 14px;
-  margin-top: 8px;
-  opacity: 0.8;
+/* Login form inside the box */
+.login-box {
+  text-align: left;
 }
 
-/* Right side: form */
-.login-right {
-  flex: 1;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.login-box label {
+  font-weight: 600;
+  color: #444;
 }
 
-.login-right h2 {
-  margin-bottom: 20px;
-  font-size: 22px;
-  color: #333333;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  font-size: 14px;
-  margin-bottom: 6px;
-  color: #444444;
-}
-
-.form-group input {
+.login-box input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #cccccc;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 14px;
 }
 
-.form-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.form-actions a {
-  font-size: 13px;
-  color: #003366;
-  text-decoration: none;
-}
-
-.form-actions a:hover {
-  text-decoration: underline;
-}
-
-/* Buttons */
-button {
-  padding: 10px 20px;
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #2a5298;
+  color: #fff;
   border: none;
   border-radius: 4px;
-  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-button.signin {
-  background: #003366;
-  color: #ffffff;
+.login-box button:hover {
+  background: #1e3c72;
 }
 
-button.signin:hover {
-  background: #002244;
+.login-box .reset-btn {
+  margin-top: 10px;
+  background: #ccc;
+  color: #333;
 }
 
-button.reset {
-  background: #cccccc;
-  color: #333333;
-}
-
-button.reset:hover {
-  background: #bbbbbb;
+.login-box .reset-btn:hover {
+  background: #999;
 }
