@@ -1,7 +1,5 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* Reset */
 body, html {
   margin: 0;
   padding: 0;
@@ -9,49 +7,59 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Central container */
-.central-container {
+.split-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
   background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
-/* Box holding logo + slogan + login form */
-.central-box {
-  background: #fff;
-  padding: 40px;
-  border-radius: 8px;
+/* Left side */
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
   text-align: center;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-.central-box h1 {
-  margin: 15px 0 5px;
-  color: #2a5298;
+.left-panel h1 {
+  margin: 10px 0;
   font-weight: 600;
 }
 
-.central-box p {
-  margin-bottom: 20px;
+.left-panel p {
   font-style: italic;
-  color: #555;
+  font-size: 16px;
 }
 
-.logo {
-  max-width: 120px;
-  margin-bottom: 10px;
+/* Right side */
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Login form inside the box */
 .login-box {
-  text-align: left;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #2a5298;
+  text-align: center;
 }
 
 .login-box label {
+  display: block;
+  margin-bottom: 6px;
   font-weight: 600;
   color: #444;
 }
@@ -64,10 +72,22 @@ body, html {
   border-radius: 4px;
 }
 
+.login-box a {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #2a5298; /* blue link */
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
 .login-box button {
   width: 100%;
   padding: 12px;
-  background: #2a5298;
+  background: #2a5298; /* blue sign-in button */
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -81,10 +101,14 @@ body, html {
 
 .login-box .reset-btn {
   margin-top: 10px;
-  background: #ccc;
-  color: #333;
+  background: transparent;
+  color: red; /* red reset link */
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .login-box .reset-btn:hover {
-  background: #999;
+  text-decoration: underline;
 }
+
