@@ -127,4 +127,154 @@ button.reset-btn:hover {
   border: 0.5px solid red;
   color: black;
 }
+.Logobox {
+  display: inline-block;
+  padding: 10px;            
+  background: #00BA86;
+  height: 100px;
+  width: 230px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Logobox img {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 2px;
+  padding-left: 40px;
+}
+.overhead header {
+  position: absolute;
+  height: 100px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  background: #00BA86;
+  border-left: solid 1px #004080;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 5px 5px 2px rgba(0,0,0,0.1);
+  border-bottom:  #004080 solid 2px;
+}
 
+.overhead header h1 {
+  margin: 0;
+  font-size: 30px;
+  padding-left: 250px;
+}
+
+.overhead header .motto {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 4px;
+  color: black;
+  padding-left: 550px;
+  padding-top: 20px;
+
+}
+
+.overhead header button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);          
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid  rgb(21, 141, 211);
+  border-radius: 5px;
+  color: #ff3333;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+.overhead header button:hover {
+  background: #cc0000;
+}
+
+/* Layout container */
+.nav-container {
+  display: flex;
+}
+
+/* Sidebar navigation */
+nav {
+  width: 200px;
+  background: #00BA86;
+  padding: 20px;
+  position: absolute;
+  border-right: #004080 solid 2px;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  box-shadow: 5px 5px 2px rgba(0,0,0,0.1);
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+}
+
+nav ul li button {
+  margin: 15px 0;
+  border: #004080 solid 2px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(21, 141, 211);;
+  width: 230px;
+  align-text: right;
+  color: white;
+  cursor: pointer;
+}
+
+
+nav ul li button:hover {
+  color: #004080;
+  width: 250px;
+  background-color: #cc0000;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* Profile card */
+.profile-card {
+  position: absolute;
+  background: rgb(21, 141, 211);
+  border-radius: 8px;
+  padding: 70px;
+  padding-right: 360px;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  top: 200px;
+  left: 400px;
+  cursor: text;
+}
+
+.studentprofilephoto {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 5px solid  rgb(21, 141, 211);
+  top: -60px;
+  left: -60px;
+}
+
+
+.profile-card p {
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.profile-card strong {
+  color: white;
+  font-size: 14px;
+}
