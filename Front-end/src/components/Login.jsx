@@ -11,7 +11,7 @@ const Login = () => {
 
   try {
     const response = await axios.post(
-      "",
+      "http://localhost/Back-End/Login.php",
       {
         admissionNumber: admissionNumber,
         password: password,
