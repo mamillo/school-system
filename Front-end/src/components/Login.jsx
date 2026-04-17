@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import logo from "../Assets/Logo.png"
 
-const Login = () => {
+function Login() {
   const [admissionNumber, setAdmissionNumber] = useState("");
   const [password, setPassword] = useState("");
 
@@ -58,13 +58,13 @@ const Login = () => {
         <div className="login-box">
           <h2>Log in</h2>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="admission">Admission number</label>
+            <label htmlFor="admission">Admission number/TSC Number</label>
             <input
               type="text"
               id="admission"
               value={admissionNumber}
               onChange={(e) => setAdmissionNumber(e.target.value)}
-              placeholder="e.g. 26/419"
+              placeholder="e.g. 26/419 or TSC12345"
               required
             />
 
