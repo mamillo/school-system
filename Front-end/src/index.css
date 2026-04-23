@@ -233,7 +233,7 @@ nav ul li button {
 
 
 nav ul li button:hover {
-  color: #004080;
+  color: black;
   width: 250px;
   background-color: #cc0000;
 }
@@ -344,3 +344,57 @@ p {
 .column strong {
   text-decoration: none;
 }
+
+.social-groups {
+  position: relative;
+  background-color: rgb(21, 141, 211);
+  padding: 15px 20px;
+  margin: 12px auto;
+  width: 600px;
+  height: 50px;
+  border:#00BA86 2px solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  left: 100px;
+  top: 70px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.social-groups:hover{
+  width: 630px;
+  height: 55px;
+  box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff; 
+}
+
+/* Club name */
+.social-groups p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Buttons */
+.social-groups button {
+  padding: 8px 18px;
+  border: 1px solid ;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Default JOIN button */
+.social-groups button:hover {
+  background-color: #00BA86;
+  color: white;
+  border: #1a0ce0 1px solid;
+  box-shadow: 0 0 10px #1a0ce0, 0 0 20px #00f7ff; 
+
+}
+.socialicon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+

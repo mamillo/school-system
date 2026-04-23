@@ -16,7 +16,7 @@ function Profile() {
                 <p><strong>Parent/Guardian: </strong> Harry Porter</p>
                 <p><strong>Email Address: </strong> Brandonmamillo@gmail.com</p>
             </div>
-           </main>
+         </main>
         </>
     );
 } 
